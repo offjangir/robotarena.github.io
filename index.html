@@ -35,7 +35,6 @@
 
 <section class="hero is-link is-fullheight video" style="overflow: hidden; position:relative;">
   <div class="hero-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-    <!-- <img src="./static/images/teaser.gif" alt="Teaser GIF" style="width: 100%; height: 100%; object-fit: cover;"> -->
     <video autoplay muted loop playsinline webkit-playsinline style="width: 100%; height: 100%; object-fit: cover;">
       <source src="./static/videos/teaser.mp4" type="video/mp4">
     </video>
@@ -137,6 +136,21 @@
         <div class="content has-text-justified">
           <p>
             The pursuit of robot generalists—instructable agents capable of performing diverse tasks across diverse environments—demands rigorous and scalable evaluation. Yet real-world testing of robot policies remains fundamentally constrained: it is labor-intensive, slow, unsafe at scale, and difficult to reproduce. Existing simulation benchmarks are similarly limited, as they train and test policies within the same synthetic domains and cannot assess models trained primarily on real-world demonstrations, which is the dominant paradigm for today's vision-language-action (VLA) models. As policies expand in scope and complexity, these barriers only intensify, since defining "success" in robotics often hinges on nuanced human judgments of execution quality.  In this paper, we introduce a new benchmarking framework that overcomes these challenges by shifting VLA evaluation into large-scale simulated environments augmented with online human feedback. Leveraging advances in vision-language models, 2D-to-3D generative modeling, and differentiable rendering, our approach automatically converts video demonstrations from widely used robot datasets into simulated counterparts. Within these digital twins, we assess VLA policies using both automated VLM-guided scoring and scalable human preference judgments collected from crowdworkers—transforming human involvement from tedious scene setup, resetting, and safety supervision into lightweight preference comparisons. To measure robustness, we systematically perturb simulated environments along multiple axes— textures and object placements — stress-testing policy generalization under controlled variation. The result is a continuously evolving, reproducible, and scalable benchmark for real-world-trained robot manipulation policies, addressing a critical missing capability in today's robotics landscape.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-centered">
+          <img src="./static/images/teaser.jpg" alt="Project pipeline diagram">
+          <p class="is-size-5" style="margin-top: 1rem;">
+            An overview of our Real-to-Sim translation pipeline for generating unlimited benchmark environments.
           </p>
         </div>
       </div>
